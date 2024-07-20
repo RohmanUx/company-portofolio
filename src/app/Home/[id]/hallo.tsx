@@ -54,7 +54,8 @@ const UserComponent: React.FC = () => {
         Location: {user.location.city}, {user.location.country}
       </p>
     </div>
-  );
-};
+   ) ; 
+  } ; 
 
-export default UserComponent;
+ export default UserComponent ; 
+  
