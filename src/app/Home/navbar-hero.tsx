@@ -35,7 +35,7 @@ const Hero: React.FunctionComponent<IAppProps> = (props) => {
             Blue finance can <br /> help to save <br /> money
           </h1>
           <p className="py-2">
-            We're the most trusted & loved place for people and businesses{" "}
+            We&aposre the most trusted & loved place for people and businesses{" "}
             <br />
             to track all of your account money & since 2028 blue finance <br />
             can good management money with rank no.2 in Japan.
@@ -58,7 +58,7 @@ const Hero: React.FunctionComponent<IAppProps> = (props) => {
             <p>
               <q>
                 It can help me manage money, including free mentor support if I
-                lose a lot of money, it's so far
+                lose a lot of money, it&aposs so far
               </q>
             </p> </div> 
             <div id="img-0" className="mt-[10px] mx-20 flex items-center">
