@@ -22,7 +22,7 @@ interface BlogFields {
 const BlogDetail: React.FunctionComponent = () => {
   const [loading, setLoading] = React.useState<boolean>(true);
   const [error, setError] = React.useState<string | null>(null);
-  const [blogEntry, setBlogEntry] = React.useState<Entry<BlogFields> | null>(null);
+  const [blogEntry, setBlogEntry] = React.useState<Entry | null>(null);
 
   React.useEffect(() => {
     const fetchBlogEntry = async () => {
