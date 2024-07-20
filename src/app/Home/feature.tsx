@@ -7,7 +7,7 @@ const Feature: React.FunctionComponent<IAppProps> = (props) => {
     <div id="page-4" className=" lg:h-[740px] md:h-[920px] flex flex-wrap flex-col">
       <div className="flex justify-center h-full flex-col flex-wrap"> 
       <div className="pb-5 flex text-center flex-wrap justify-center flex-col"> 
-        <h1 className="text-[36px]">
+        <h1 className="text-[36px] text-white">
           {" "}
           Feature <br /> financial problem {" "}
         </h1>
