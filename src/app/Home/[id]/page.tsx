@@ -24,27 +24,7 @@ const BlogDetail: React.FunctionComponent = () => {
   const [error, setError] = React.useState<string | null>(null);
   const [blogEntry, setBlogEntry] = React.useState<Entry | null>(null);
 
-  React.useEffect(() => {
-    const fetchBlogEntry = async () => {
-      try {
-        const hardcodedId = 'your-blog-entry-id'; // Replace with your actual blog entry ID
-        const entries = await getEntriesById(hardcodedId);
-        if (entries.length > 0) {
-          setBlogEntry(entries[0] as Entry);
-        } else {
-          setError("No blog entry found.");
-        }
-      } catch (error) {
-        setError("Failed to fetch blog entry.");
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchBlogEntry();
-  }, []);
-
-  if (loading) return <p>Loading...</p>;
+    if (loading) return <p>Loading...</p>;
   if (error) return <p>{error}</p>;
   if (!blogEntry) return <p>No blog entry found.</p>;
 
@@ -68,8 +48,14 @@ const BlogDetail: React.FunctionComponent = () => {
         />
       </div>
       <div className="flex-1 p-4">
-        <h3 className="text-lg font-bold" dangerouslySetInnerHTML={{ __html: htmlTitle }} />
-        <h3 className="text-lg font-bold" dangerouslySetInnerHTML={{ __html: htmlDescription }} />
+        <h3
+          className="text-lg font-bold"
+          dangerouslySetInnerHTML={{ __html: htmlTitle }}
+        />
+        <h3
+          className="text-lg font-bold"
+          dangerouslySetInnerHTML={{ __html: htmlDescription }}
+        />
         <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
         <div>
           <p>{author}</p>
@@ -80,4 +66,3 @@ const BlogDetail: React.FunctionComponent = () => {
 };
 
 export default BlogDetail;
-  
