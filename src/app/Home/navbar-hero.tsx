@@ -3,6 +3,7 @@ import * as React from "react";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Navbar from "../help/navbar";
+import Image from "next/image"
 
 interface IAppProps {}
 
@@ -61,7 +62,7 @@ const Hero: React.FunctionComponent<IAppProps> = (props) => {
               </q>
             </p> </div> 
             <div id="img-0" className="mt-[10px] mx-20 flex items-center">
-              <img
+              <Image 
                 id="img"
                 src="https://cdn.dribbble.com/userupload/15332517/file/original-a64cd79737df1ee5c2451eb8c825a5d5.png?resize=1200x900"
                 width={45}

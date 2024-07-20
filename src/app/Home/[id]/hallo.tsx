@@ -1,7 +1,7 @@
 // components/UserComponent.jsx
 "use client"
 import { useEffect, useState } from 'react';
-
+import Image from "next/image"
 const UserComponent = () => {
   const [user, setUser] = useState(null);
 
@@ -20,7 +20,7 @@ const UserComponent = () => {
   return (
     <div>
       <h1>User Information</h1>
-      <img src={user.picture.large} alt="User Picture" />
+      <Image src={user.picture.large} alt="User Picture" />
       <p>Name: {user.name.first} {user.name.last}</p>
       <p>Email: {user.email}</p>
       <p>Location: {user.location.city}, {user.location.country}</p>
