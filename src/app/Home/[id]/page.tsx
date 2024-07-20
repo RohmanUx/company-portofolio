@@ -30,7 +30,7 @@ const BlogDetail: React.FunctionComponent = () => {
         const hardcodedId = 'your-blog-entry-id'; // Replace with your actual blog entry ID
         const entries = await getEntriesById(hardcodedId);
         if (entries.length > 0) {
-          setBlogEntry(entries[0] as Entry<BlogFields>);
+          setBlogEntry(entries[0] as Entry);
         } else {
           setError("No blog entry found.");
         }
@@ -80,3 +80,4 @@ const BlogDetail: React.FunctionComponent = () => {
 };
 
 export default BlogDetail;
+  
