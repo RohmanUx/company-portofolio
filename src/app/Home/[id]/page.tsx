@@ -28,8 +28,12 @@ const BlogDetail: React.FunctionComponent = () => {
     const fetchBlogEntry = async () => {
       try {
         const hardcodedId = 'your-blog-entry-id'; // Replace with your actual blog entry ID
-        const entry = await getEntriesById(hardcodedId);
-        setBlogEntry(entry);
+        const entries = await getEntriesById(hardcodedId);
+        if (entries.length > 0) {
+          setBlogEntry(entries[0] as Entry<BlogFields>);
+        } else {
+          setError("No blog entry found.");
+        }
       } catch (error) {
         setError("Failed to fetch blog entry.");
       } finally {
@@ -76,4 +80,3 @@ const BlogDetail: React.FunctionComponent = () => {
 };
 
 export default BlogDetail;
-  
