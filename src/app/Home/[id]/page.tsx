@@ -66,3 +66,4 @@ const BlogDetail: React.FunctionComponent = () => {
 };
 
 export default BlogDetail;
+  
