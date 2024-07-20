@@ -29,7 +29,7 @@ const BlogDetail: React.FunctionComponent = () => {
   if (!blogEntry) return <p>No blog entry found.</p>;
 
   const { title, content, author, description, image } = blogEntry.fields;
-  const imageUrl = image.fields.file.url;
+  const imageUrl = File;
 
   // Convert Markdown to HTML
   const htmlTitle = marked(title);
