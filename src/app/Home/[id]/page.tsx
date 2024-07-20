@@ -37,16 +37,16 @@ const BlogDetail: React.FunctionComponent = () => {
       </div>
       <div className="flex-1 p-4">
         <h3 className="text-lg font-bold">
-          <Markdown>{title}</Markdown>
+          <Markdown> title </Markdown>
         </h3>
         <h3 className="text-lg font-bold">
-          <Markdown>{description}</Markdown>
+          <Markdown> description </Markdown>
         </h3>
         <div>
-          <Markdown>{author}</Markdown>
+          <Markdown> author </Markdown>
         </div>
         <div>
-          <Markdown>{content}</Markdown>
+          <Markdown> content </Markdown>
         </div>
       </div>
     </div>
