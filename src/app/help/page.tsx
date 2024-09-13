@@ -9,10 +9,10 @@ const Help: React.FunctionComponent<IAppProps> = (props) => {
       <Navbar />
       <div className="h-[740px] text-center flex flex-col justify-center items-center ">
         <div>
-          <h1 className="my-12  text-6xl"> help request : </h1>
+          <h1 className="my-0  text-6xl"> help request: </h1>
         </div>
         <div>
-          <p className="my-12">
+          <p className="my-8">
             Please detail your issue. Thanks, we can support this.
           </p>
         </div>

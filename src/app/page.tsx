@@ -1,9 +1,10 @@
 // src/pages/index.tsx
 import Head from "next/head";
-import About from "./Home/[id]/about";
-import Hero from "./Home/navbar-hero";
+import About from "./Home/about";
+import Hero from "./Home/hero";
 import Feature from "./Home/feature";
-import Team from "./Home/team";
+import Team from "./teams/page";
+import Footer from "./Home/footer";
 
 export default function MainPage() {
   return (
@@ -17,9 +18,7 @@ export default function MainPage() {
       <main>
         <Hero />
         <About />
-        <Feature />
-        <Team />
-      </main>
+                <Footer />      </main>
     </div>
   );
 }

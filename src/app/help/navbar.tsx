@@ -1,63 +1,39 @@
-"use client";
+  "use client";
 import * as React from "react";
 import Link from "next/link";
-import { useRouter } from "next/router"; // Corrected import for useRouter
+import { useRouter } from "next/router";
 import Image from "next/image";
 
 interface IAppProps {}
 
 const Navbar: React.FunctionComponent<IAppProps> = (props) => {
   return (
-    <div>
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          backgroundColor: "white",
-          padding: "24px",
-          justifyContent: "space-between",
-        }}
-      >
-        <div className="items-center flex-no-wrap flex w-56 md:w-64"> 
-          <h1
-            id="logo-0"
-            style={{
-              fontSize: 24,
-              fontWeight: 600,
-  
-              color: "black",
-            }}
-            className="text-[24px] ml-2 md:ml-0"
-          >
-            Greenly.id
-          </h1>
-        </div>
-        <div className="flex justify-start w-full">
-          <ul
-            style={{
-              display: "flex",
-              listStyle: "none",
-              gap: 50,
-              justifyContent: "center",
-              fontSize: 16,
-            }}
-          >
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-                        <li>
-              <Link href="/maps">Maps</Link>
-            </li>
-            <li>
-              <Link href="/help">Help</Link>
-            </li>
-          </ul>
-        </div>
-        <div className="flex">
-          <button className="text-base rounded-full flex-nowrap flex py-[2px] border-[1px] border-black px-2">
+    <div className="fixed top-0 left-0 right-0 pt-4 z-10">
+      <div className="flex items-center justify-between mx-4 md:mx-8 lg:mx-32 py-4 px-6 md:px-10 lg:px-16 border border-black rounded-full  bg-gray-100/80 backdrop-blur-md">
+        <h1 className="text-xl md:text-2xl font-semibold text-black">
+          blueMoney
+        </h1>
+
+        <ul className="flex gap-6 md:gap-12 list-none text-sm md:text-lg">
+          <li>
+            <Link href="/">Home </Link>
+          </li>
+          <li>
+            <Link href="/maps">Feature </Link>
+          </li>
+          <li>
+            <Link href="/teams">Teams </Link>
+          </li>
+          <li>
+            <Link href="/help">Help </Link>
+          </li>
+        </ul>
+
+        <div className="flex gap-2">
+          <button className="text-sm md:text-base rounded-full border border-black px-3 py-1 md:px-4 md:py-1">
             Meeting
           </button>
-          <button className="text-white bg-[#535c47] text-base rounded-full flex-nowrap flex py-[2px] px-4 ml-2">
+          <button className="text-sm md:text-base text-white bg-[#535c47] rounded-full pl-3 py-1 md:px-4 md:py-1 ">
             Contract
           </button>
         </div>

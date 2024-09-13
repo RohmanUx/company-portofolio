@@ -13,7 +13,7 @@ const PageLayout: React.FunctionComponent<IPageLayoutProps> = ({
   return ( 
     <div> 
     
-    <div className="w-full flex bg-white items-center justify-center pb-28">
+    <div className="w-full flex bg-gray-50 items-center justify-center pb-28">
       <h1 className="text-xl uppercase">{pageTitle}</h1>
       <div>{children}</div>
     </div> </div> 
