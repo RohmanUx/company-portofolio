@@ -27,7 +27,7 @@ const FeatureNew: React.FunctionComponent<IAppProps> = () => {
           <MagicWandIcon className="text-white h-10 w-10 mx-auto mb-4" />
           <h2 className="text-xl font-bold text-white mb-2">Invest</h2>
           <p className="text-white text-sm">
-            Take advantage of investment opportunities and grow your wealth before it's too late.
+            Take advantage of investment opportunities and grow your wealth before its too late.
           </p>
         </div>
 
