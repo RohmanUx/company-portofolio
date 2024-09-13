@@ -36,7 +36,7 @@ const FeatureNew: React.FunctionComponent<IAppProps> = () => {
           <CheckIcon className="text-white h-10 w-10 mx-auto mb-4" />
           <h2 className="text-xl font-bold text-white mb-2">Loan</h2>
           <p className="text-white text-sm">
-            Need funds for a holiday or important matter? Secure a loan that fits your needs.
+            Need funds for a holiday or important matter Secure a loan that fits your needs.
           </p>
         </div>
 
