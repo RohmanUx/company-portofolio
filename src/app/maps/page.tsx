@@ -9,25 +9,25 @@ interface IAppProps {}
 
 const Feature: React.FunctionComponent<IAppProps> = (props) => {
   return (
-    <div>
+    <div className="w-full px-32 mt-[-150px]">
       <Navbar />
-      <div className="md:px-[160px] h-[800px] flex flex-nowrap items-center content-center justify-around bg-gray-100 border-b border-black">
-        <div>
+      <div className="md:px-[0px] h-[1800px] flex flex-nowrap items-center content-center justify-around bg-gray-00 border-black flex flex-col w-full x-20">
+        <div className="border-b-[1px] border-black/80 w-full flex items-center justify-center">
           {" "}
-          <p className="lg:text-6xl flex justify-end md:text-2xl mr-24 w-[500px]">
+          <p className="lg:text-2xl flex justify-center md:text-2xl  w-full items-center h-screen text-gray-900/80">
             {" "}
-            “Its Feature status chart 🗺️: can tell a great story from start to finish. its so Improve!”
+            "Explore the chart below <span className="text-orange-900/80 ml-1">to see how this feature works and the valuable benefits it offers!”</span>
 
              </p> {" "}
         </div> {" "} 
-        <div className="flex justify-center flex-nowrap"> 
+        <div className="flex justify-center flex-nowrap "> 
         <div className="w-90 flex justify-start flex-wrap">
-        <p className="py-8 text-xl">     Analitic markey company#</p>
-          <Component /> {" "}
+        <p className="py-8 text-xl w-full text-center text-900/80">   stock market live</p>
+        <div className="w-full flex justify-center">  <Component /> {" "} </div>
          </div> </div>
         </div>
-   <div> 
-   <FeatureNew /> </div> 
+
+   <FeatureNew /> 
 
                    </div> 
   );

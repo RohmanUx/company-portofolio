@@ -1,62 +1,61 @@
 import * as React from "react";
-import { RocketIcon, MagicWandIcon, CheckIcon, StarIcon } from "@radix-ui/react-icons"; // Using Radix icons
+import { RocketIcon, MagicWandIcon, CheckIcon, StarIcon } from "@radix-ui/react-icons";
 
 interface IAppProps {}
 
 const FeatureNew: React.FunctionComponent<IAppProps> = () => {
   return (
-    <div className="flex flex-col justify-center  items-center h-full lg:h-[740px] md:h-[920px] px-52 pt-16 bg-gray-100">
+    <div className="flex flex-col justify-center items-center h-screen lg:h-auto px-6 sm:px-10 md:px-20 lg:px-28 xl:px-32 py-40 ">
       {/* Title and Description */}
-      <div className="text-center text-gray-800 mb-14">
-        <h1 className="text-4xl font-semibold mb-2">Feature Financial Solutions</h1>
-              </div>
+      <div className="text-center text-gray-900 mb-10 sm:mb-12">
+        <h1 className="text-2xl sm:text-3xl lg:text-2xl  mb-3"> benefit saving money with stock market</h1>
+             </div>
 
       {/* Feature Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
         {/* Card 1 - Saving */}
-        <div className="bg-gray-700 bg-opacity-80 rounded-xl p-6 text-center shadow-lg">
-          <RocketIcon className="text-white h-10 w-10 mx-auto mb-4" />
-          <h2 className="text-xl font-bold text-white mb-2">Saving</h2>
-          <p className="text-white text-sm">
+        <div className="bg-blue-900/60 bg-opacity-90 rounded-full p-5 text-center shadow-lg transform transition-transform hover:scale-105 hover:bg-opacity-100">
+          <RocketIcon className="text-yellow-900 h-10 w-12 sm:h-12 sm:w-10 mx-auto mb-3 sm:mb-4" />
+          <h2 className="text-lg sm:text-xl font-bold text-white mb-2">Simple buy sell</h2>
+          <p className="text-xs sm:text-sm text-white">
             Manage your money daily with effective saving strategies to secure your financial future.
           </p>
         </div>
 
         {/* Card 2 - Invest */}
-        <div className="bg-gray-700 bg-opacity-80 rounded-xl p-6 text-center shadow-lg">
-          <MagicWandIcon className="text-white h-10 w-10 mx-auto mb-4" />
-          <h2 className="text-xl font-bold text-white mb-2">Invest</h2>
-          <p className="text-white text-sm">
-            Take advantage of investment opportunities and grow your wealth before its too late.
+        <div className="bg-blue-900/60 bg-opacity-90 rounded-full p-5 text-center shadow-lg transform transition-transform hover:scale-105 hover:bg-opacity-100">
+          <MagicWandIcon className="text-yellow-900 h-10 w-12 sm:h-12 sm:w-10 mx-auto mb-3 sm:mb-4" />
+          <h2 className="text-lg sm:text-xl font-bold text-white mb-2">Stability market </h2>
+          <p className="text-xs sm:text-sm text-white">
+            Take advantage of investment opportunities and grow your wealth before it’s too late.
           </p>
         </div>
 
-        { /* Card 3 - Loan */ }
-        <div className="bg-gray-700 bg-opacity-80 rounded-xl p-6 text-center shadow-lg">
-          <CheckIcon className="text-white h-10 w-10 mx-auto mb-4" />
-          <h2 className="text-xl font-bold text-white mb-2">Loan</h2>
-          <p className="text-white text-sm">
-            Need funds for a holiday or important matter Secure a loan that fits your needs.
+        {/* Card 3 - Loan */}
+        <div className="bg-blue-900/60 bg-opacity-90 rounded-full p-5 text-center shadow-lg transform transition-transform hover:scale-105 hover:bg-opacity-100">
+          <CheckIcon className="text-yellow-900 h-10 w-10 sm:h-12 sm:w-12 mx-auto mb-3 sm:mb-4" />
+          <h2 className="text-lg sm:text-full font-bold text-white mb-2">invest with low loan</h2>
+          <p className="text-xs sm:text-sm text-white">
+            Secure a loan that fits your needs for holidays or important matters.
           </p>
         </div>
-  
-        { /* Card 4 - Trust Pilot */ }
-        <div className="bg-gray-700 bg-opacity-80 rounded-xl p-6 text-center shadow-lg">
-          <StarIcon className="text-white h-10 w-10 mx-auto mb-4" />
-          <h2 className="text-xl font-bold text-white mb-2">Trust Pilot</h2>
-          <p className="text-white text-sm">
-           Customer Rank: 80% <br />
-            Customers trust us because we offer reliable financial solutions.
-          </p>
-        </div> 
 
-        
+        {/* Card 4 - Trust Pilot */}
+        <div className="bg-blue-900/60 bg-opacity-90 rounded-full p-5 text-center shadow-lg transform transition-transform hover:scale-105 hover:bg-opacity-100">
+          <StarIcon className="text-yellow-900 h-10 w-10 sm:h-12 sm:w-12 mx-auto mb-3 sm:mb-4" />
+          <h2 className="text-lg sm:text-xl font-bold text-white mb-2">Trust pilot users</h2>
+          <p className="text-xs sm:text-sm text-white">
+            Customer Rank: 80% <br />
+            Customers trust us for reliable financial solutions.
+          </p>
+        </div>
       </div>
-        <div className="text-center text-gray-800 py-14">
-                <p className="text-lg text-gray-800">
-          Change the way you manage money — from side hustles to everyday  <br />
-          spending, at home or abroad, to your financial goals.
-        </p>
+
+      {/* Footer Description */}
+      <div className="text-center text-gray-900 py-10 sm:py-12">
+        <p className="text-sm sm:text-base lg:text-lg text-gray-700">
+          change the way you manage money — from side hustles to everyday <br />
+                </p>
       </div>
     </div>
   );
