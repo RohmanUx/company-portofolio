@@ -10,7 +10,7 @@ const Feature: React.FunctionComponent<IAppProps> = (props) => {
   return (
     <div className="w-full px-32 mt-[-150px]">
       <Navbar />
-      <div className="md:px-[0px] h-[1800px] flex flex-nowrap items-center content-center justify-around bg-gray-00 border-black flex flex-col w-full x-20">
+      <div className="md:px-[0px] h-[1800px] flex flex-nowrap items-center content-center justify-around bg-gray-00 border-black flex-col w-full x-20">
         <div className="border-b-[1px] border-black/80 w-full flex items-center justify-center">
           <p className="lg:text-2xl flex justify-center md:text-2xl w-full items-center h-screen text-gray-900/80">
             <q>
