@@ -16,7 +16,7 @@ const Feature: React.FunctionComponent<IAppProps> = (props) => {
           {" "}
           <p className="lg:text-2xl flex justify-center md:text-2xl  w-full items-center h-screen text-gray-900/80">
             {" "}
-            "Explore the chart below <span className="text-orange-900/80 ml-1">to see how this feature works and the valuable benefits it offers!”</span>
+            <q>Explore the chart below <span className="text-orange-900/80 ml-1">to see how this feature works and the valuable benefits it offers!</span></q> 
 
              </p> {" "}
         </div> {" "} 
